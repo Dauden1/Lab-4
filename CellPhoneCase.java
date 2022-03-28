@@ -1,6 +1,5 @@
 public class CellPhoneCase extends Case {
     private CellPhone phone;
-    private CellPhone temp;
     public CellPhoneCase(String name, String color, String phoneNumber){
         super(name,color);
         phone = new CellPhone(name,phoneNumber);
@@ -12,7 +11,13 @@ public class CellPhoneCase extends Case {
         phone.setDoNotDisturb(true);
     }
     public static void swapPhones(CellPhoneCase case1, CellPhoneCase case2){
-        CellPhoneCase temp = new CellPhoneCase();
-        case1 = temp;
+        CellPhoneCase temp;
+        temp = case1;
+        case1= case2;
+        case2=temp;
+    }
+    @Override
+    pulblic String toString(){
+        
     }
 }
