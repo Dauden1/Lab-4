@@ -18,6 +18,9 @@ public class CellPhoneCase extends Case {
     }
     @Override
     pulblic String toString(){
-        
+        return super.toString()+ " , " + phone.toString();
+    }
+    public static void main(String[] args){
+        Cell
     }
 }
